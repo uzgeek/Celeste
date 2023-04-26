@@ -13,7 +13,7 @@
   <main role="main">
     {{ content_for_layout }}
 
-    {% if all_products['product-1'].title == "Prodduct #1" %}
+    {% if all_products['product-1'].title != "Product #1" %}
       The title of the product is Product #1
     {% endif %}
   </main>
