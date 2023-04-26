@@ -13,7 +13,7 @@
   <main role="main">
     {{ content_for_layout }}
 
-    {% for index in (1,100) %}
+    {% for index in (1...100) %}
       {{ index }}<br>
     {% endfor %}
   </main>
