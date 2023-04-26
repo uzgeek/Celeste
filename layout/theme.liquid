@@ -13,9 +13,9 @@
   <main role="main">
     {{ content_for_layout }}
 
-
-    {{ all_products["product-1"].price }}
-
+    {% if all_products['product-1'].title == "Product #1" %}
+      The title of the product is Product #1
+    {% endif %}
   </main>
 </body>
 </html>
