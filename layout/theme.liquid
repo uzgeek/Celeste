@@ -13,9 +13,14 @@
   <main role="main">
     {{ content_for_layout }}
 
-    {% unless all_products['product-1'].title != "Product #1" %}
-      The title of the product is Product #1
-    {% endunless %}
+    {% case all_products['product-1'].title %}
+      {% when "Product #1" %}
+        This is Product number 1
+      {% when "Product #2" %}
+        This is Product number 2
+      {% else %}
+        Title of the product is neither Product#1 nor Product#2
+    {% endcase %}
   </main>
 </body>
 </html>
