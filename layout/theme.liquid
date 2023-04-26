@@ -14,7 +14,7 @@
     {{ content_for_layout }}
 
     {% for index in (1...100) %}
-      {{ index }}<br>
+     {{ forloop.index }} is {{ index }}<br>
     {% endfor %}
   </main>
 </body>
