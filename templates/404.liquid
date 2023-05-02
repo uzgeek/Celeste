@@ -1,3 +1,9 @@
 {% layout 'theme.alternate' %}
 <h1>{{ 'general.404.title' | t }}</h1>
 <p>{{ 'general.404.subtext_html' | t }}</p>
+
+{% liquid 
+  if all_products['product-1'].title != "Product #2"
+    echo all_products['product-1'].title
+  endif
+%}
