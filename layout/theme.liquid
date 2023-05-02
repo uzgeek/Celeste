@@ -14,10 +14,10 @@
     {{ content_for_layout }}
 
     {% for index in (1..100) %}
-     <p id="paragraph-{{ forloop.index0 }}">Paragraph {{ index }}</p>
+     {% cycle 'first', 'second', 'third' %}
     {% endfor %}
 
-    {% cycle 'first', 'second', 'third' %}
+    
   </main>
 </body>
 </html>
