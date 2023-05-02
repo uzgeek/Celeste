@@ -14,7 +14,7 @@
     {{ content_for_layout }}
 
     {% for index in (1..100) %}
-     {{ forloop.rindex }} is {{ index }}<br>
+     <p id="paragraph-{{ forloop.index0 }}">Paragraph {{ index }}</p>
     {% endfor %}
   </main>
 </body>
