@@ -20,9 +20,8 @@
   <main role="main">
     {{ content_for_layout }}
 
-    {% tablerow index in (1..100) %}
-      {% echo "hi" %}
-    {% endtablerow %}
+    {% form 'contact' %}
+    {% endform %}
     
   </main>
 </body>
